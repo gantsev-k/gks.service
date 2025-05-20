@@ -1,2 +1,0 @@
-# gks.service
-gks.service
