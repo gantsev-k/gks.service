@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gks. | Ремонт компьютеров</title>
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Шапка -->
+  <header class="header" role="banner">
+    <h1 class="header-logo">gks.</h1>
+    <!-- Навигация -->
+    <nav class="nav-bar" role="navigation" aria-label="Основное меню">
+      <ul class="nav-bar__list">
+        <li class="nav-bar__item">
+          <a href="#home" class="nav-bar__link" aria-current="page">главная</a>
+        </li>
+        <li class="nav-bar__item">
+          <a href="#cases" class="nav-bar__link">примеры работ</a>
+        </li>
+        <li class="nav-bar__item">
+          <a href="#services" class="nav-bar__link">услуги</a>
+        </li>
+        <li class="nav-bar__item">
+          <a href="#about" class="nav-bar__link">опыт</a>
+        </li>
+        <li class="nav-bar__item">
+          <a href="#contacts" class="nav-bar__link">контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <p class="header-subtitle">
+      <span class="header-subtitle__text">PC Repair</span>
+      <span title="Гарантия качества">100%</span>
+    </p>
+  </header>
+
+  <main class="content-wrapper">
+    <!-- Герой -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-container">
+        <h2 id="hero-title" class="hero-title" lang="en">windows.update(<span class="hero-title__arg">finally_works:
+            true</span>)<span class="blinking-cursor">_</span></h2>
+        <p class="hero-descr">// Никакого "переустановите Windows" — чиним причину, а не симптомы</p>
+      </div>
+    </section>
+
+    <!-- Кейсы -->
+    <section class="cases" id="cases" aria-labelledby="cases-title">
+      <div class="container">
+        <h2 class="cases__title" lang="en">> cases.load(<span class="arg">humor: true</span>)</h2>
+        <div class="cases__list">
+          <!-- Кейс 1 -->
+          <article class="case">
+            <div class="case__header">
+              <span class="case__comment" lang="en">// case_01: zombie_laptop</span>
+              <h3 class="case__name" lang="en">laptop.revive()</h3>
+            </div>
+            <div class="case__image">
+              <img src="./src/img/pc.png" alt="Ноутбук с перегревом">
+            </div>
+            <p class="case__descr">Вентилятор кричал как проклятый. Почистили, заменили термопасту — теперь шепчет, как
+              новый.</p>
+          </article>
+
+          <!-- Кейс 2 -->
+          <article class="case">
+            <div class="case__header">
+              <span class="case__comment" lang="en">// case_02: stealth_viruses</span>
+              <h3 class="case__name" lang="en">virus.scan(<span class="arg">deep: true</span>)</h3>
+            </div>
+            <div class="case__image">
+              <img src="./src/img/pc.png" alt="Вирусы в системе">
+            </div>
+            <p class="case__descr">Нашли 3 трояна и 5 рекламных червей. Вылечили без переустановки.</p>
+          </article>
+          <!-- Кейс 3 -->
+          <article class="case">
+            <div class="case__header">
+              <span class="case__comment" lang="en">// case_03: dead_hard_drive</span>
+              <h3 class="case__name" lang="en">hdd.resurrect(<span class="arg">data: critical</span>)</h3>
+            </div>
+            <div class="case__image">
+              <img src="./src/img/pc.png" alt="Восстановление жесткого диска">
+            </div>
+            <p class="case__descr">HDD издавал звуки "клик смерти". Восстановили 98% данных без потерь.</p>
+          </article>
+
+          <!-- Кейс 4 -->
+          <article class="case">
+            <div class="case__header">
+              <span class="case__comment" lang="en">// case_04: gpu_overheat</span>
+              <h3 class="case__name" lang="en">gpu.coolDown(<span class="arg">emergency: true</span>)</h3>
+            </div>
+            <div class="case__image">
+              <img src="./src/img/pc.png" alt="Перегрев видеокарты">
+            </div>
+            <p class="case__descr">Видеокарта грелась до 105°C. Заменили термопрокладки — теперь 65°C под нагрузкой.</p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="services__title" lang="en">> services.list(<span class="arg">pricing: true</span>)</h2>
+        <div class="services__container">
+          <article class="service">
+            <div class="service__header">
+              <span class="service__comment" lang="en">// #service_01</span>
+              <h3 class="service__name" lang="en">windows.repair(<span class="arg">critical: true</span>)</h3>
+            </div>
+            <p class="service__descr">Лечение синих экранов и «зависших» процессов</p>
+            <div class="service__price">
+              <span class="price__value">2990₽</span>
+              <span class="price__note">// или 2× pizza margherita</span>
+            </div>
+          </article>
+          <article class="service">
+            <div class="service__header">
+              <span class="service__comment" lang="en">// #service_02</span>
+              <h3 class="service__name" lang="en">data.recovery(<span class="arg">priority: high</span>)</h3>
+            </div>
+            <p class="service__descr">Восстановление данных с мертвых носителей</p>
+            <div class="service__price">
+              <span class="price__value">от 4990₽</span>
+              <span class="price__note">// цена зависит от состояния пациента</span>
+            </div>
+          </article>
+
+          <article class="service">
+            <div class="service__header">
+              <span class="service__comment" lang="en">// #service_03</span>
+              <h3 class="service__name" lang="en">pc.upgrade(<span class="arg">silent: true</span>)</h3>
+            </div>
+            <p class="service__descr">Апгрейд с подбором совместимых компонентов</p>
+            <div class="service__price">
+              <span class="price__value">1990₽</span>
+              <span class="price__note">// + стоимость компонентов</span>
+            </div>
+          </article>
+
+          <article class="service">
+            <div class="service__header">
+              <span class="service__comment" lang="en">// #service_04</span>
+              <h3 class="service__name" lang="en">virus.remove(<span class="arg">aggressive: false</span>)</h3>
+            </div>
+            <p class="service__descr">Удаление вирусов без потери данных</p>
+            <div class="service__price">
+              <span class="price__value">2490₽</span>
+              <span class="price__note">// гарантия 30 дней</span>
+            </div>
+          </article>
+          <!-- Добавьте больше услуг -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="about">
+      <div class="container">
+        <h2 class="experience__title">> обо_мне.собрать(<span class="arg">подробно: true</span>)</h2>
+        <div class="experience__container">
+          <article class="experience__item">
+            <div class="exp__header">
+              <span class="exp__comment">// основные_параметры</span>
+              <h3 class="exp__name">карьера.начало(<span class="arg">год: 2009</span>)</h3>
+            </div>
+            <div class="exp__content">
+              <p class="exp__descr"><span class="exp__key">стаж</span> = <span class="exp__value">15</span> лет</p>
+            </div>
+          </article>
+          <article class="experience__item">
+            <div class="exp__header">
+              <span class="exp__comment">// оборудование.статистика</span>
+              <h3 class="exp__name">ремонты.проведено(<span class="arg">успешно: true</span>)</h3>
+            </div>
+            <div class="exp__content">
+              <p class="exp__descr"><span class="exp__key">ноутбуков</span> = <span class="exp__value">327</span></p>
+              <p class="exp__descr"><span class="exp__key">ПК</span> = <span class="exp__value">198</span></p>
+              <p class="exp__descr"><span class="exp__key">мониторов</span> = <span class="exp__value">76</span></p>
+            </div>
+          </article>
+
+          <article class="experience__item">
+            <div class="exp__header">
+              <span class="exp__comment">// сертификаты</span>
+              <h3 class="exp__name">знания.подтвердить(<span class="exp__arg">официально: true</span>)</h3>
+            </div>
+            <div class="exp__content">
+              <p class="exp__descr"><span class="exp__key">Microsoft</span> = <span class="exp__value">MCSA, MCSE</span>
+              </p>
+              <p class="exp__descr"><span class="exp__key">CompTIA</span> = <span class="exp__value">A+, Network+</span>
+              </p>
+              <p class="exp__descr"><span class="exp__key">ACE</span> = <span class="exp__value">Data Recovery</span>
+              </p>
+            </div>
+          </article>
+          <!-- Добавьте больше пунктов -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <h2 class="contacts__title">> контакты.позвонить(<span class="arg">срочно: true</span>)</h2>
+        <div class="contacts__container">
+          <!-- Телефон -->
+          <div class="contact__item">
+            <div class="contact__header">
+              <span class="contact__comment" lang="en">// phone_protocol_v1.0</span>
+              <h3 class="contact__name">звонок.принять()</h3>
+            </div>
+            <a href="tel:+79991234567" class="contact__value">+7 999 123-45-67</a>
+          </div>
+
+          <!-- Email -->
+          <div class="contact__item">
+            <div class="contact__header">
+              <span class="contact__comment" lang="en">// email_service</span>
+              <h3 class="contact__name">письмо.отправить()</h3>
+            </div>
+            <a href="mailto:repair@gks.ru" class="contact__value">repair@gks.ru</a>
+          </div>
+
+          <!-- Адрес -->
+          <div class="contact__item">
+            <div class="contact__header">
+              <span class="contact__comment" lang="en">// location_data</span>
+              <h3 class="contact__name">офис.найти()</h3>
+            </div>
+            <p class="contact__value">г. Москва, ул. Ремонтная, 42</p>
+          </div>
+
+          <!-- Соцсети -->
+          <div class="contact__item">
+            <div class="contact__header">
+              <span class="contact__comment" lang="en">// social.connect()</span>
+              <h3 class="contact__name">Telegram</h3>
+            </div>
+            <a href="https://t.me/gks_repair" class="contact__value">@gks_repair</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+
+    <p>console.log("Ремонт завершен в " + new Date().getFullYear());</p>
+    <p>coding by <span>me</span></p>
+  </footer>
+
+  <script type="module" src="./src/js/script.js"></script>
+</body>
+
+</html>
