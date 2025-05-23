@@ -191,7 +191,6 @@ body {
     padding-right: 2rem;
 }
 
-/*/*/
 .case {
     border: var(--border);
     padding: 1.25rem;
@@ -234,7 +233,7 @@ body {
 }
 
 .case__image img {
-    max-height: 120px;
+    max-height: 200px;
     object-fit: contain;
     filter: grayscale(100%) contrast(120%);
 }
@@ -477,7 +476,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    /* gap: 1rem; */
+    font-weight: 300;
+    font-size: 14px;
 }
 
 .footer>p>span {
