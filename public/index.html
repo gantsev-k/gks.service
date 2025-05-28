@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Ремонт компьютеров в Екатеринбурге. Удаление вирусов, восстановление данных, настройка Windows. Гарантия качества.">
+  <meta name="keywords" content="ремонт компьютеров, IT-услуги, Екатеринбург, восстановление данных, удаление вирусов">
+  <meta property="og:title" content="Ремонт ПК в Екатеринбурге">
+  <meta property="og:description" content="Профессиональный ремонт компьютеров и IT-услуги">
+  <meta property="og:image" content="https://it-service-ekb/img/og-image.jpg">
+  <meta property="og:url" content="https://it-service-ekb/">
+
+  <title>Ремонт ПК в Екатеринбурге | IT-услуги с гарантией</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script defer src="/__/firebase/11.8.1/firebase-app-compat.js"></script>
+  <script defer src="/__/firebase/11.8.1/firebase-firestore-compat.js"></script>
+  <script defer src="/__/firebase/11.8.1/firebase-analytics-compat.js"></script>
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+</head>
+
+<body>
+
+  <header class="header" role="banner">
+    <h1 class="header-logo">
+      <span class="logo-text">Ремонт компьютеров и IT-услуги</span>
+      <span class="logo-abbr" aria-label="Константин Ганцев, Екатеринбург">gks.</span>
+    </h1>
+    <!-- Навигация -->
+    <nav class="nav-bar" role="navigation" aria-label="Основное меню">
+      <ul class="nav-bar__list">
+        <li class="nav-bar__item">
+          <a href="#home" class="nav-bar__link" aria-current="page">главная</a>
+        </li>
+        <li class="nav-bar__item">
+          <a href="#cases" class="nav-bar__link">примеры работ</a>
+        </li>
+        <li class="nav-bar__item">
+          <a href="#services" class="nav-bar__link">услуги</a>
+        </li>
+        <li class="nav-bar__item">
+          <a href="#about" class="nav-bar__link">опыт</a>
+        </li>
+        <li class="nav-bar__item">
+          <a href="#contacts" class="nav-bar__link">контакты</a>
+        </li>
+        <li class="nav-bar__item">
+          <a href="#faq" class="nav-bar__link">faq</a>
+        </li>
+        <!-- <li class="nav-bar__item">
+          <a href="./html/blog.html" class="nav-bar__link">блог</a>
+        </li> -->
+      </ul>
+    </nav>
+    <p class="header-subtitle">
+      <span class="header-subtitle__text">PC Repair</span>
+      <span title="Гарантия качества">100%</span>
+    </p>
+  </header>
+
+  <main class="content-wrapper">
+    <!-- hero -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-container">
+        <h2 id="hero-title" class="hero-title" lang="en">windows.update(<span class="hero-title__arg">finally_works:
+            true</span>)<span class="blinking-cursor">_</span></h2>
+        <p class="hero-descr">
+          <span class="hero-item"><span class="code-style">></span> Чиню причину, а не симптомы (никаких «просто
+            переустановите»)</span><br>
+          <span class="hero-item"><span class="code-style">></span> Консультации по безопасности и
+            оптимизации</span><br>
+          <span class="hero-item"><span class="code-style">></span> Подбор бесплатного софта вместо платного</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Кейсы -->
+    <section class="cases" id="cases" aria-labelledby="cases-title">
+      <div class="container">
+        <!-- <h2 class="cases__title">> кейсы.загрузить(<span class="arg">решено: true</span>)</h2> -->
+        <h2 class="cases__title">Решенные кейсы <span class="code-style">> load_cases()</span></h2>
+        <div class="cases__list">
+
+          <article class="case">
+            <div class="case__header">
+              <span class="case__comment">// Кейс 01: перегрев ноутбука</span>
+              <h3 class="case__name">Ремонт перегрева <span class="code-style">laptop.revive()</span></h3>
+            </div>
+            <div class="case__image">
+              <img src="./src/img/kitty.jpg" alt="Чистка системы охлаждения ноутбука">
+            </div>
+            <p class="case__descr">Вентилятор кричал как проклятый. Почистили, заменили термопасту — теперь шепчет, как
+              новый.</p>
+          </article>
+
+          <article class="case">
+            <div class="case__header">
+              <span class="case__comment">// Кейс 02: скрытые вирусы</span>
+              <h3 class="case__name">Удаление вирусов <span class="code-style">virus.scan()</span></h3>
+            </div>
+            <div class="case__image">
+              <img src="./src/img/pc.png" alt="Удаление вредоносного ПО">
+            </div>
+            <p class="case__descr">Нашли скрытое вредоносное ПО. Вылечили систему без переустановки Windows.</p>
+          </article>
+
+          <article class="case">
+            <div class="case__header">
+              <span class="case__comment">// Кейс 03: спасение данных</span>
+              <h3 class="case__name">Восстановление HDD <span class="code-style">hdd.resurrect()</span></h3>
+            </div>
+            <div class="case__image">
+              <img src="./src/img/hdd.jpg" alt="Восстановление данных с жесткого диска">
+            </div>
+            <p class="case__descr">HDD издавал «клик смерти». Восстановили 98% данных. Клиент получил рекомендацию по
+              переходу на
+              SSD.</p>
+          </article>
+
+          <article class="case">
+            <div class="case__header">
+              <span class="case__comment">// Кейс 04: синий экран</span>
+              <h3 class="case__name">Исправление BSOD <span class="code-style">windows.fix()</span></h3>
+            </div>
+            <div class="case__image">
+              <img src="./src/img/pc.png" alt="Исправление синего экрана смерти">
+            </div>
+            <p class="case__descr">Синий экран появлялся каждые 2 часа. Обнаружили конфликт драйверов — система работает
+              стабильно
+              3+ месяца.</p>
+          </article>
+
+          <article class="case">
+            <div class="case__header">
+              <span class="case__comment">// Кейс 05: медленная загрузка</span>
+              <h3 class="case__name">Ускорение Windows <span class="code-style">system.optimize()</span></h3>
+            </div>
+            <div class="case__image">
+              <img src="./src/img/win-setup.jpg" alt="Оптимизация Windows">
+            </div>
+            <p class="case__descr">Загрузка системы занимала 4+ минуты. Отключили 57 фоновых процессов — теперь
+              загружается за 60
+              секунд.</p>
+          </article>
+
+          <article class="case">
+            <div class="case__header">
+              <span class="case__comment">// Кейс 06: Проблемы с Wi-Fi</span>
+              <h3 class="case__name">Ремонт Wi-Fi подключения <span class="code-style">wifi.fix()</span></h3>
+            </div>
+            <div class="case__image">
+              <img src="./src/img/wifi.jpg" alt="Настройка Wi-Fi подключения">
+            </div>
+            <p class="case__descr">Wi-Fi постоянно отключался каждые 10 минут. Обнаружил конфликт IP-адресов в сети -
+              настроил
+              статические адреса и обновил драйвер адаптера. Теперь соединение стабильное уже 2 месяца.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="services__title">Услуги <span class="code-style">> services.list()</span></h2>
+        <div class="services__container">
+
+          <article class="service">
+            <div class="service__header">
+              <span class="service__comment">// Услуга 01</span>
+              <h3 class="service__name">Удаление вирусов <span class="code-style">deep_clean()</span></h3>
+            </div>
+            <p class="service__descr">Уничтожение вирусов, троянов и рекламного ПО без переустановки системы</p>
+            <div class="service__price">
+              <span class="price__value">2500₽</span>
+              <span class="price__note">// гарантия 30 дней</span>
+            </div>
+          </article>
+
+          <article class="service">
+            <div class="service__header">
+              <span class="service__comment">// Услуга 02</span>
+              <h3 class="service__name">Ускорение Windows <span class="code-style">turbo_boost()</span></h3>
+            </div>
+            <p class="service__descr">Чистка от мусора, настройка автозагрузки и оптимизация работы</p>
+            <div class="service__price">
+              <span class="price__value">2000₽</span>
+              <span class="price__note">// загрузка в 2 раза быстрее</span>
+            </div>
+          </article>
+
+          <article class="service">
+            <div class="service__header">
+              <span class="service__comment">// Услуга 03</span>
+              <h3 class="service__name">Чистая установка ОС <span class="code-style">os.install()</span></h3>
+            </div>
+            <p class="service__descr">Windows/Linux с драйверами и необходимым софтом (без лишних программ)</p>
+            <div class="service__price">
+              <span class="price__value">3000₽</span>
+              <span class="price__note">// только нужные компоненты</span>
+            </div>
+          </article>
+
+          <article class="service">
+            <div class="service__header">
+              <span class="service__comment">// Услуга 04</span>
+              <h3 class="service__name">Восстановление данных <span class="code-style">data.rescue()</span></h3>
+            </div>
+            <p class="service__descr">Спасение файлов с повреждённых HDD/SSD (если диск определяется)</p>
+            <div class="service__price">
+              <span class="price__value">5000₽</span>
+              <span class="price__note">// даже в критических случаях</span>
+            </div>
+          </article>
+
+          <article class="service">
+            <div class="service__header">
+              <span class="service__comment" lang="en">// Услуга 05</span>
+              <h3 class="service__name">Ремонт сети <span class="code-style">net.fix()</span></h3>
+            </div>
+            <p class="service__descr">Настройка интернета, Wi-Fi, VPN и удалённого доступа</p>
+            <div class="service__price">
+              <span class="price__value">2500₽</span>
+              <span class="price__note">// стабильный Wi-Fi и VPN</span>
+            </div>
+          </article>
+
+          <article class="service">
+            <div class="service__header">
+              <span class="service__comment" lang="en">Услуга 06</span>
+              <h3 class="service__name">Настройка бэкапов <span class="code-style">backup.setup()</span></h3>
+            </div>
+            <p class="service__descr">Организация резервного копирования (облако + локальное хранилище)</p>
+            <div class="service__price">
+              <span class="price__value">3000₽</span>
+              <span class="price__note">// спокойный сон гарантирован</span>
+            </div>
+          </article>
+
+          <article class="service">
+            <div class="service__header">
+              <span class="service__comment" lang="en">// Услуга 07</span>
+              <h3 class="service__name">Обновление драйверов <span class="code-style">drivers.update()</span></h3>
+            </div>
+            <p class="service__descr">Решение проблем с драйверами и синими экранами смерти</p>
+            <div class="service__price">
+              <span class="price__value">2200₽</span>
+              <span class="price__note">// без непонятных ошибок</span>
+            </div>
+          </article>
+
+          <article class="service">
+            <div class="service__header">
+              <span class="service__comment" lang="en">// Услуга 08</span>
+              <h3 class="service__name">Подбор программ <span class="code-style">apps.find()</span></h3>
+            </div>
+            <p class="service__descr">Подбор бесплатных аналогов платных программ</p>
+            <div class="service__price">
+              <span class="price__value">1500₽</span>
+              <span class="price__note">// сэкономим ваши деньги</span>
+            </div>
+          </article>
+
+          <article class="service">
+            <div class="service__header">
+              <span class="service__comment" lang="en">// Услуга 09</span>
+              <h3 class="service__name">Замена комплектующих <span class="code-style">hardware.upgrade()</span></h3>
+            </div>
+            <p class="service__descr">Профессиональная замена HDD на SSD, добавление оперативной памяти, установка
+              видеокарты с
+              тестированием</p>
+            <div class="service__price">
+              <span class="price__value">от 1500₽</span>
+              <span class="price__note">// + стоимость комплектующих</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="about">
+      <div class="container">
+        <h2 class="experience__title">Мой подход <span class="code-style">> about_me()</span></h2>
+        <div class="experience__container">
+
+          <article class="experience__item">
+            <div class="exp__header">
+              <h3 class="exp__name">Профиль <span class="code-style">> profile()</span></h3>
+            </div>
+            <div class="exp__content">
+              <p class="exp__descr">
+                <span class="exp__key">// Опыт:</span>
+                <span class="exp__value">14+ лет системного администрирования и участия в разработке ПО</span>
+              </p>
+              <p class="exp__descr">
+                <span class="exp__key">// Решаю:</span>
+                <span class="exp__value">Проблемы от домашних ПК до корпоративной инфраструктуры</span>
+              </p>
+              <p class="exp__descr">
+                <span class="exp__key">// Экспертиза:</span>
+                <span class="exp__value">Windows/Linux, виртуализация, резервное копирование</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="experience__item">
+            <div class="exp__header">
+              <h3 class="exp__name">Философия работы <span class="code-style">> philosophy()</span></h3>
+            </div>
+            <div class="exp__content">
+              <p class="exp__descr">
+                <span class="exp__key">//</span>
+                <span class="exp__value">Никакого "просто переустановите Windows" — устраняю первопричины проблем</span>
+              </p>
+              <ul class="exp__list">
+                <li>Объясняю сложное простыми словами</li>
+                <li>Научу избегать повторения проблем</li>
+                <li>Подберу оптимальные решения под ваш бюджет</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Блок 3: Процесс работы -->
+          <article class="experience__item">
+            <div class="exp__header">
+              <h3 class="exp__name">Как я работаю <span class="code-style">> workflow()</span></h3>
+            </div>
+            <div class="exp__content">
+              <ul class="exp__list">
+                <li><strong>1. Диагностика</strong> — точное определение причины</li>
+                <li><strong>2. План</strong> — согласование решения и стоимости</li>
+                <li><strong>3. Реализация</strong> — быстрое и аккуратное исполнение</li>
+                <li><strong>4. Обучение</strong> — объясню как избежать проблемы в будущем</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Блок 4: Гарантии -->
+          <article class="experience__item">
+            <div class="exp__header">
+              <h3 class="exp__name">Гарантии <span class="code-style">> warranty()</span></h3>
+            </div>
+            <div class="exp__content">
+              <ul class="exp__list">
+                <li>Исправление за свой счет, если проблема повторится</li>
+                <li>Конфиденциальность ваших данных</li>
+                <li>Честная оценка сроков и стоимости</li>
+                <li>Поддержка после ремонта</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Блок 5: Технологии -->
+          <article class="experience__item">
+            <div class="exp__header">
+              <h3 class="exp__name">Методы <span class="code-style">> methods()</span></h3>
+            </div>
+            <div class="exp__content">
+              <ul class="exp__list">
+                <li>Глубокая диагностика системных ошибок</li>
+                <li>Безопасное удаление сложных вирусов</li>
+                <li>Восстановление данных без потерь</li>
+                <li>Оптимизация для максимальной производительности</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Блок 6: Призыв к действию -->
+          <article class="experience__item">
+            <div class="exp__header">
+              <h3 class="exp__name">Готов помочь <span class="code-style">> contact_me()</span></h3>
+            </div>
+            <div class="exp__content">
+              <p class="exp__descr">
+                <span class="exp__key">//</span>
+                <span class="exp__value">Оставьте заявку и получите консультацию в течение 1 часа</span>
+              </p>
+              <a href="#contacts" class="exp__cta">Написать мне →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <h2 class="contacts__title">Свяжитесь со мной <span class="code-style">> contacts.now()</span></h2>
+
+        <div class="contacts__container">
+          <!-- Телефон -->
+          <div class="contact__item">
+            <div class="contact__header">
+              <span class="contact__comment">// Самый быстрый способ</span>
+              <h3 class="contact__name">Телефон <span class="code-style">> call</span></h3>
+            </div>
+            <a href="tel:+79931074700" class="contact__value">+7 (993) 107-47-00</a>
+            <p class="contact__hours">с 9:00 до 21:00 без выходных</p>
+          </div>
+
+          <!-- Email -->
+          <div class="contact__item">
+            <div class="contact__header">
+              <span class="contact__comment">// Для сложных вопросов</span>
+              <h3 class="contact__name">Email <span class="code-style">> mail</span></h3>
+            </div>
+            <a href="mailto:gantsev.k.service@gmail.com" class="contact__value">gantsev.k.service@gmail.com</a>
+            <p class="contact__note">Ответ в течение 2 часов</p>
+          </div>
+
+          <!-- Мессенджеры -->
+          <div class="contact__item">
+            <div class="contact__header">
+              <span class="contact__comment">// Онлайн-консультация</span>
+              <h3 class="contact__name">Мессенджеры <span class="code-style">> chat</span></h3>
+            </div>
+            <div class="contact__messengers">
+              <a href="https://t.me/gantsev_k" class="contact__link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-telegram" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
+                </svg> @gantsev_k
+              </a>
+            </div>
+          </div>
+
+          <!-- Адрес -->
+          <div class="contact__item">
+            <div class="contact__header">
+              <span class="contact__comment">// Для личного визита</span>
+              <h3 class="contact__name">Адрес <span class="code-style">> location</span></h3>
+            </div>
+            <p class="contact__value">г. Екатеринбург</p>
+            <p class="contact__note">Точный адрес при согласовании</p>
+          </div>
+        </div>
+
+        <!-- Форма обратной связи -->
+        <div class="contact__form-wrapper" id="feedback_form">
+          <div class="contact__form-header">
+            <span class="contact__comment">// Быстрая заявка</span>
+            <h3 class="contact__name">Форма обратной связи <span class="code-style">> feedback_form</span></h3>
+          </div>
+
+          <form id="feedbackForm" class="feedback-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Ваше имя</label>
+              <input type="text" id="name" name="name" required class="form-input" placeholder="Как к вам обращаться?">
+            </div>
+
+            <div class="form-group">
+              <label for="contact" class="form-label">Контакт</label>
+              <input type="text" id="contact" name="contact" required class="form-input"
+                placeholder="Телефон или Email">
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Опишите проблему</label>
+              <textarea id="message" name="message" required class="form-textarea"
+                placeholder="Что случилось с вашим устройством?"></textarea>
+            </div>
+
+            <button type="submit" class="form-submit">Отправить заявку →</button>
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="faq__title">Частые вопросы > faq.load(<span class="arg">items: <span
+              id="faqCount">0</span></span>)<span class="blinking-cursor">_</span></h2>
+
+        <div class="accordion">
+          <!-- Категория 1 -->
+          <h3 class="faq-category">Основные проблемы</h3>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span class="accordion__question">Почему компьютер тормозит?</span>
+              <svg class="accordion__icon" width="16" height="16" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <div class="code-style">
+                <p><strong>Основные причины:</strong></p>
+                <p>- Перегружена оперативная память</p>
+                <p>- Много программ в автозагрузке</p>
+                <p>- Перегрев компонентов</p>
+                <p>- Вирусы или вредоносное ПО</p>
+                <p class="solution-cta"><strong>Решение:</strong> Диагностика + чистка системы (1-2 часа)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span class="accordion__question">Что делать, если компьютер не включается?</span>
+              <svg class="accordion__icon" width="16" height="16" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <div class="code-style">
+                <p><strong>Что проверить:</strong></p>
+                <p>- Подключение к розетке</p>
+                <p>- Кнопку питания на блоке</p>
+                <p>- Индикаторы на материнской плате</p>
+                <p>- Звуковые сигналы при включении</p>
+                <p class="solution-cta"><strong>Решение:</strong> Аппаратная диагностика (от 30 минут)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span class="accordion__question">Почему появляется синий экран?</span>
+              <svg class="accordion__icon" width="16" height="16" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <div class="code-style">
+                <p><strong>Возможные причины:</strong></p>
+                <p>- Проблемы с драйверами (65% случаев)</p>
+                <p>- Ошибки оперативной памяти</p>
+                <p>- Перегрев компонентов</p>
+                <p>- Повреждение системных файлов</p>
+                <p class="solution-cta"><strong>Решение:</strong> Анализ дампа памяти + исправление</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Категория 2 -->
+          <h3 class="faq-category">Обслуживание и апгрейд</h3>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span class="accordion__question">Как часто нужно чистить компьютер?</span>
+              <svg class="accordion__icon" width="16" height="16" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <div class="code-style">
+                <p><strong>Рекомендации:</strong></p>
+                <p>- Стационарный ПК: раз в 1-2 года</p>
+                <p>- Ноутбук: раз в 1-1.5 года</p>
+                <p>- В пыльных помещениях: каждые 6 месяцев</p>
+                <p>- Серверы: каждые 3-6 месяцев</p>
+                <p class="solution-cta"><strong>Решение:</strong> Комплексная чистка с заменой термопасты</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span class="accordion__question">SSD или HDD - что лучше?</span>
+              <svg class="accordion__icon" width="16" height="16" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <div class="code-style">
+                <p><strong>Сравнение:</strong></p>
+                <p>- SSD: в 5-10 раз быстрее, бесшумный, надежнее</p>
+                <p>- HDD: дешевле за объем, подходит для архива</p>
+                <p>- Срок службы: современные SSD работают 5-7+ лет</p>
+                <p class="solution-cta"><strong>Решение:</strong> Подберу оптимальный вариант под ваш бюджет</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span class="accordion__question">Как ускорить старый компьютер?</span>
+              <svg class="accordion__icon" width="16" height="16" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <div class="code-style">
+                <p><strong>Эффективные методы:</strong></p>
+                <p>1. Установка SSD (+150% скорости)</p>
+                <p>2. Добавление оперативной памяти</p>
+                <p>3. Чистая установка Windows</p>
+                <p>4. Оптимизация системы</p>
+                <p class="solution-cta"><strong>Решение:</strong> Комплексный апгрейд за 2-3 часа</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Категория 3 -->
+          <h3 class="faq-category">Безопасность и данные</h3>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span class="accordion__question">Как защититься от вирусов?</span>
+              <svg class="accordion__icon" width="16" height="16" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <div class="code-style">
+                <p><strong>Базовые правила:</strong></p>
+                <p>- Установите антивирус (бесплатные варианты есть)</p>
+                <p>- Регулярно обновляйте Windows</p>
+                <p>- Не открывайте подозрительные письма</p>
+                <p>- Используйте блокировщик рекламы</p>
+                <p class="solution-cta"><strong>Решение:</strong> Настрою комплексную защиту за 1 час</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span class="accordion__question">Как восстановить удаленные файлы?</span>
+              <svg class="accordion__icon" width="16" height="16" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <div class="code-style">
+                <p><strong>Важно:</strong></p>
+                <p>- Не записывайте новые данные на диск</p>
+                <p>- Не устанавливайте программы на тот же диск</p>
+                <p>- Шансы восстановления: 70-90% для HDD, 30-50% для SSD</p>
+                <p class="solution-cta"><strong>Решение:</strong> Профессиональное восстановление данных</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span class="accordion__question">Как сделать резервную копию?</span>
+              <svg class="accordion__icon" width="16" height="16" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <div class="code-style">
+                <p><strong>Варианты резервного копирования:</strong></p>
+                <p>- Внешний жесткий диск (самый простой)</p>
+                <p>- Облачные хранилища (Google Drive, Яндекс.Диск)</p>
+                <p>- Специализированные программы (Acronis, Macrium)</p>
+                <p class="solution-cta"><strong>Решение:</strong> Настрою автоматическое резервное копирование</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Категория 4 -->
+          <h3 class="faq-category">Сеть и интернет</h3>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span class="accordion__question">Почему Wi-Fi плохо работает?</span>
+              <svg class="accordion__icon" width="16" height="16" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <div class="code-style">
+                <p><strong>Основные причины:</strong></p>
+                <p>- Перегружен канал Wi-Fi (соседние сети)</p>
+                <p>- Физические препятствия (стены, мебель)</p>
+                <p>- Устаревший роутер</p>
+                <p>- Проблемы с драйверами</p>
+                <p class="solution-cta"><strong>Решение:</strong> Настройка Wi-Fi и выбор оптимального канала</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span class="accordion__question">Как защитить домашнюю сеть?</span>
+              <svg class="accordion__icon" width="16" height="16" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <div class="code-style">
+                <p><strong>Меры защиты:</strong></p>
+                <p>- Сменить пароль от роутера</p>
+                <p>- Включить шифрование WPA2/WPA3</p>
+                <p>- Отключить WPS</p>
+                <p>- Обновить прошивку роутера</p>
+                <p class="solution-cta"><strong>Решение:</strong> Полная настройка безопасности сети</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Категория 5 -->
+          <h3 class="faq-category">Программы и ОС</h3>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span class="accordion__question">Какую версию Windows выбрать?</span>
+              <svg class="accordion__icon" width="16" height="16" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <div class="code-style">
+                <p><strong>Рекомендации:</strong></p>
+                <p>- Новые компьютеры: Windows 11</p>
+                <p>- Компьютеры 5-7 лет: Windows 10</p>
+                <p>- Очень старые ПК: Windows 8.1 или Linux</p>
+                <p>- Для офиса: Windows 10 LTSC</p>
+                <p class="solution-cta"><strong>Решение:</strong> Помогу выбрать и установить оптимальную версию</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span class="accordion__question">Нужен ли антивирус для Windows 10/11?</span>
+              <svg class="accordion__icon" width="16" height="16" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+              </svg>
+            </button>
+            <div class="accordion__content">
+              <div class="code-style">
+                <p><strong>Защита Windows:</strong></p>
+                <p>- Встроенный Защитник Windows - базовый уровень</p>
+                <p>- Для полной защиты лучше сторонний антивирус</p>
+                <p>- Бесплатные варианты: Kaspersky Free, Avast Free</p>
+                <p class="solution-cta"><strong>Решение:</strong> Установлю и настрою антивирусную защиту</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Кнопка "Задать вопрос" -->
+        <div class="faq-cta">
+          <p>Не нашли ответ на свой вопрос?</p>
+          <a href="#feedback_form" class="cta-button">Задать вопрос</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__logo">gks.</div>
+        <div class="footer__meta">
+          <p class="footer__text">
+            <span class="code-style">IT-ремонт</span> = {
+            <span class="arg">year: <span class="current-year">{2025}</span></span>,
+            <span class="arg">location: "Екатеринбург"</span>}
+          </p>
+          <p class="footer__text">
+            <span class="code-style">website</span> = {
+            <span class="arg">design: "Константин Ганцев"</span>,
+            <span class="arg">development: "Константин Ганцев"</span>}
+          </p>
+          <nav class="footer__nav">
+            <a href="#home" class="footer__link">Главная</a>
+            <a href="#services" class="footer__link">Услуги</a>
+            <a href="#cases" class="footer__link">Примеры работ</a>
+            <a href="#contacts" class="footer__link">Контакты</a>
+          </nav>
+          <div class="footer__social">
+            <a href="https://t.me/gantsev_k" class="footer__link" aria-label="Telegram">
+              <span class="code-style">telegram.connect(</span>@gantsev_k<span class="code-style">)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scrollToTopBtn" aria-label="Наверх" title="Наверх">
+    <span class="code-style">↑</span>
+  </button>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
